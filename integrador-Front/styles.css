@@ -121,11 +121,14 @@ h3 {
     text-align: center;
     line-height: 1.1;
 }
-.container-fomulario{
-    display: grid;
-    align-items: center;
-    justify-content: center;
 
+.row-formulario {
+    max-width: 600px;
+}
+
+.container-formulario {
+    display: flex;
+    justify-content: center;
 }
 
 .formulario p {
@@ -138,4 +141,74 @@ h3 {
 .form-control {
     margin: 10px 8px;
     padding: 8px;
+}
+
+.button-submit {
+    color: white;
+    width: 250px;
+    padding: .2rem 3rem;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+}
+
+/*seccion formulario-ticket*/
+.formulario-ticket {
+    padding: 0 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.grid-tickets {
+    display: grid;
+    width: 100%;
+    max-width: 640px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 776px) {
+    .grid-tickets {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.box-ticket {
+    padding: 20px 10px;
+    border-radius: 2px;
+}
+
+.total-pagar {
+    color: black;
+    background-color: skyblue;
+    margin: 25px 0 16px 0;
+    padding: 10px 20px;
+}
+
+.borrar, .resumen {
+    margin: 8px;
+    padding: 8px;
+}
+
+/*footer*/
+.container-footer {
+    padding: 24px;
+
+}
+
+.row-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+li {
+    color: white;
+    margin: 10px;
 }
